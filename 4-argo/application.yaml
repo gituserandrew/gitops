@@ -1,0 +1,25 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: go-assignment-prod
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: git@github.com:gituserandrew/dev1-golang-github.git
+    targetRevision: main
+    path: overlays/prod
+    kustomize: {}
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: goapp
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
+
+
+# Copyright: (c) 2026, Kyaw Zayar Aung <rayezcaroll@gmail.com, gituser.andrew@gmail.com>
+# MIT License (see https://opensource.org/license/mit/)
