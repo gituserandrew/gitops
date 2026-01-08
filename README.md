@@ -13,7 +13,7 @@ Before starting the project, you need to have strong knowledge of,
 - ArgoCD
 - Kustomize
 - Rest API (Route / Controller / (Middleware - optional))
-Better to know,
+* Better to know,
   - SSL / TLS Certificate
   - Container Monitoring (Prometheus, Grafana)
   - API Testing
