@@ -1,4 +1,5 @@
 # All required information are described and can be referenced from deployment_plan.xlsx (Excel file).
+# Deployment architecture is described in 'CI CD Pipeline.jpg'.
 Before starting the project, you need to have strong knowledge of,
 - Linux <--Mandatory-->
 - Git
